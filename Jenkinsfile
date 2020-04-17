@@ -37,8 +37,8 @@ node("master"){
   stage("Publish to Artifactory") {
     // create a Artifactory server reference with some credentials we stored in Jenkins already
     //def server = Artifactory.newServer url: 'http://artifactory.example.com/artifactory', credentialsId: 'artifactory-credentials'
-    def server = Artifactory.server 'hrgame-artifactory'
-    //Artifactory.newServer url: 'http://192.168.0.14:8081/artifactory', username: 'admin', password: 'HrgamepwD0'
+    //def server = Artifactory.server 'hrgame-artifactory'
+    Artifactory.newServer url: 'http://192.168.0.14:8081/artifactory', username: 'admin', password: 'HrgamepwD0'
     // Upload spec is a definition for the Artifactory plugin to tell it how and what to upload, and where in Artifactory it should go
     def uploadSpec = """{
       "files": [
