@@ -50,6 +50,7 @@ node("master"){
      ]
     }"""
     // perform the upload
-    server.upload(uploadSpec)
+    //server.upload(uploadSpec)
+    server.upload spec: uploadSpec, failNoOp: true
   }
 }
