@@ -43,7 +43,8 @@ node("master"){
       "files": [
         {
           "pattern": "binaries/*",
-          "target": "generic-local/golang/${applicationName}/",
+          //"target": "generic-local/golang/${applicationName}/",
+          "target": "superWare-gamesvr/golang/${applicationName}/",
           "flat": false
         }
      ]
