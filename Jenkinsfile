@@ -42,7 +42,7 @@ node("master"){
       "files": [
         {
           "pattern": "binaries/*",
-          "target": "superWare-gamesvr/golang/${applicationName}/",
+          "target": "ap2/golang/${applicationName}/",
           "flat": false
         }
      ]
